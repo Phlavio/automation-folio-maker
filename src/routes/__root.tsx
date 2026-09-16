@@ -85,9 +85,7 @@ function NotFoundComponent() {
       <div className="max-w-md">
         <p className="label-mono">404</p>
         <h1 className="mt-3 text-3xl font-semibold tracking-tight">Page not found</h1>
-        <p className="mt-2 text-sm text-muted-foreground">
-          That page doesn't exist or has moved.
-        </p>
+        <p className="mt-2 text-sm text-muted-foreground">That page doesn't exist or has moved.</p>
         <Link
           to="/"
           className="mt-6 inline-flex items-center border border-primary px-4 py-2 font-mono text-xs uppercase tracking-[0.12em] text-primary transition-colors hover:bg-primary hover:text-primary-foreground"

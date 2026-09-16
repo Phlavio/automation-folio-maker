@@ -22,3 +22,27 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+
+## Self-hosted NocoDB setup
+
+The projects page reads NocoDB from a server-only function, so the API token is
+never sent to the browser. The production build targets Node.js and can run on
+the same personal server as NocoDB, or on another machine that is connected to
+the same Tailscale network.
+
+1. Copy `.env.example` to `.env` on the server.
+2. Set `NOCODB_BASE_URL` to the NocoDB URL reachable from that server (for
+   example, `http://100.x.y.z:8080` or a MagicDNS hostname). Do not use a
+   browser-only `localhost` URL unless NocoDB runs on the same machine.
+3. Set `NOCODB_TABLE_ID` to the table ID from NocoDB and
+   `NOCODB_API_TOKEN` to a NocoDB API token with read access to that table.
+4. Build and start the app:
+
+```sh
+npm install
+npm run build
+npm start
+```
+
+If NocoDB is unavailable or the variables are missing, the site deliberately
+shows the bundled sample projects instead of exposing an API error or secret.

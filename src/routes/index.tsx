@@ -47,7 +47,9 @@ const capabilities = [
 
 function Home() {
   const { data } = useSuspenseQuery(projectsQueryOptions);
-  const featured = sortProjects(data.projects).filter((p) => p.featured).slice(0, 3);
+  const featured = sortProjects(data.projects)
+    .filter((p) => p.featured)
+    .slice(0, 3);
   const shown = featured.length > 0 ? featured : sortProjects(data.projects).slice(0, 3);
 
   return (
