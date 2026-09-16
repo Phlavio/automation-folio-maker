@@ -1,0 +1,49 @@
+PHILIP AUGUSTINE B. CADUNGOG
+Full-Stack Software Engineer
+Bayawan City, Negros Oriental
+philipicads@gmail.com | 0976-043-9449
+https://philfolio.onrender.com
+
+PROFESSIONAL SUMMARY
+Full-stack software engineer with hands-on experience building RESTful APIs, scalable web applications, and AI-powered automation workflows using n8n, OpenAI, Gemini, and OpenClaw. Skilled in JavaScript/TypeScript, PHP (Laravel), Java (Spring Boot), and Vue.js/React for web development. Track record of improving system stability and cutting manual effort through clean code and well-designed API integrations. Career Service (Professional) eligible.
+
+CORE SKILLS
+Languages: JavaScript, TypeScript, PHP, Java, C#, SQL
+Frontend: Vue.js, React.js, Twig.php, HTML5, CSS3, Bootstrap, Responsive and Mobile-First Design
+Backend: PHP (Laravel), Java (Spring Boot), Node.js (Express)
+Databases: MySQL, MariaDB, Database Design and Optimization
+Tools and Platforms: Git, Subversion, Figma (UI/UX), n8n, REST API Integration, Web Service Hosting
+Practices: Agile/Scrum, Debugging and Performance Optimization
+
+PROFESSIONAL EXPERIENCE
+
+Workflow Automation Developer | Sophi Outsourcing | Dec 2025 - Present
+- Designed and implemented AI agents in n8n using prompt engineering and robust workflow logic.
+- Built API integrations connecting CRMs, webhooks, and cloud applications to AI models in real time.
+- Applied OpenAI and Gemini for data processing, image generation, and SEO metadata generation.
+- Maintained WordPress environments through updates, security hardening, backups, and performance tuning.
+- Reduced manual process time by 70% with error-handled, monitored workflows.
+
+Full-Stack Developer (Freelance) | Diamond Branding Co. | Jul - Aug 2025
+- Built a React/TypeScript affiliate marketing dashboard with real-time analytics, commission tracking, and automated link generation.
+- Developed user-facing and admin interfaces, including performance charts and withdrawal management.
+
+Information Technology Instructor | Southern Tech College Foundation Incorporated | Mar 2025
+- Taught college-level Web Development and Computer-Based Accounting using a hands-on, project-based approach.
+
+Full-Stack Developer | 3 Clicks Cloud | Mar 2024 - Feb 2025
+- Built full-stack web applications using Vue.js, Spring Boot, and MariaDB.
+- Designed RESTful APIs, debugged full-stack issues, and optimized queries and API performance.
+- Delivered features end-to-end within Agile teams, from design through launch.
+
+Web Developer Intern | Miller Solutions Development | Jan - May 2023
+- Created and tested UI/UX designs in Figma and supported client web application development.
+- Built a personal portfolio website and gained experience with Vue 3, TypeScript, API integration, and SQL data preparation.
+
+EDUCATION
+Bachelor of Science in Information Technology
+Silliman University, Dumaguete City
+
+CERTIFICATION
+Career Service Eligibility - Professional, Civil Service Commission
+General Rating: 84.10

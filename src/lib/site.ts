@@ -4,12 +4,12 @@ export const site = {
   headline: "Software Developer",
   subheadline: "Full stack web development and n8n automation",
   location: "Dumaguete City, Philippines",
-  email: "hello@example.com",
+  email: "philipcads@gmail.com",
   pitch:
     "I build web applications end to end and wire them into automated workflows with n8n — so the software does the work instead of the people using it.",
   links: {
     linkedin: "https://www.linkedin.com/in/philcads-dev/",
-    github: "https://github.com/philcads-dev",
+    github: "https://github.com/phlavio",
   },
   nav: [
     { label: "Projects", to: "/projects" },

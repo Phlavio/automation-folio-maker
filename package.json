@@ -8,11 +8,7 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
-<<<<<<< HEAD
-    "start": "node .output/server/index.mjs",
-=======
     "start": "node --env-file=.env .output/server/index.mjs",
->>>>>>> agents/nocodb-setup-on-personal-server
     "lint": "eslint .",
     "format": "prettier --write ."
   },

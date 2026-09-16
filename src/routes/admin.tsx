@@ -32,6 +32,7 @@ function AdminPage() {
   const [session, setSession] = useState<Session | null>(null);
   const [projects, setProjects] = useState<Project[]>([]);
   const [form, setForm] = useState<FormState>(emptyForm);
+  const [techStackInput, setTechStackInput] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
@@ -97,6 +98,10 @@ function AdminPage() {
   async function saveProject(event: React.FormEvent) {
     event.preventDefault();
     if (!supabase) return;
+    const techStack = techStackInput
+      .split(",")
+      .map((item) => item.trim())
+      .filter(Boolean);
     const payload = {
       title: form.title,
       slug:
@@ -107,7 +112,7 @@ function AdminPage() {
           .replace(/^-|-$/g, ""),
       summary: form.summary,
       description: form.description,
-      tech_stack: form.techStack,
+      tech_stack: techStack,
       category: form.category,
       cover_image: form.coverImage,
       live_url: form.liveUrl,
@@ -124,6 +129,7 @@ function AdminPage() {
     else {
       setMessage("Project saved.");
       setForm(emptyForm);
+      setTechStackInput("");
       await loadProjects();
     }
   }
@@ -225,16 +231,8 @@ function AdminPage() {
         <input
           className="border border-border bg-transparent p-3"
           placeholder="Tech stack (comma separated)"
-          value={form.techStack.join(", ")}
-          onChange={(e) =>
-            setForm({
-              ...form,
-              techStack: e.target.value
-                .split(",")
-                .map((item) => item.trim())
-                .filter(Boolean),
-            })
-          }
+          value={techStackInput}
+          onChange={(e) => setTechStackInput(e.target.value)}
         />
         <input
           className="border border-border bg-transparent p-3"
@@ -299,7 +297,10 @@ function AdminPage() {
             </div>
             <div className="flex gap-2">
               <button
-                onClick={() => setForm(project)}
+                onClick={() => {
+                  setForm(project);
+                  setTechStackInput(project.techStack.join(", "));
+                }}
                 className="border border-border px-3 py-1 font-mono text-xs"
               >
                 Edit

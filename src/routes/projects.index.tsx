@@ -70,13 +70,13 @@ function ProjectsPage() {
           onChange={setCategory}
           format={(v) => (v === "all" ? "All" : categoryLabel(v))}
         />
-        <FilterRow
+        {/* <FilterRow
           label="Tech"
           options={techs}
           value={tech}
           onChange={setTech}
           format={(v) => (v === "all" ? "All" : v)}
-        />
+        /> */}
       </div>
 
       <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
