@@ -1,6 +1,4 @@
 import { z } from "zod";
-import { queryOptions } from "@tanstack/react-query";
-import { listProjects } from "./projects.functions";
 
 export const projectSchema = z.object({
   id: z.union([z.string(), z.number()]).transform(String),
@@ -97,11 +95,6 @@ export const sampleProjects: Project[] = [
   },
 ];
 
-export const projectsQueryOptions = queryOptions({
-  queryKey: ["projects"],
-  queryFn: () => listProjects(),
-  staleTime: 60_000,
-});
 
 export function sortProjects(projects: Project[]) {
   return [...projects].sort((a, b) => a.order - b.order || a.title.localeCompare(b.title));
