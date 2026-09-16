@@ -20,7 +20,7 @@ export type Project = z.infer<typeof projectSchema>;
 
 export type ProjectsResult = {
   projects: Project[];
-  source: "nocodb" | "sample";
+  source: "supabase" | "sample";
   error: string | null;
 };
 
