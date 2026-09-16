@@ -23,6 +23,7 @@ npm i
 npm run dev
 ```
 
+<<<<<<< HEAD
 ## Self-hosted NocoDB setup
 
 The projects page reads NocoDB from a server-only function, so the API token is
@@ -37,6 +38,20 @@ the same Tailscale network.
 3. Set `NOCODB_TABLE_ID` to the table ID from NocoDB and
    `NOCODB_API_TOKEN` to a NocoDB API token with read access to that table.
 4. Build and start the app:
+=======
+## Supabase setup
+
+Projects are stored in Supabase. The public site reads only published rows,
+and `/admin` requires a Supabase Auth email/password before it can create,
+edit, or delete projects. Never put a service-role key in `.env`.
+
+1. Create a Supabase project.
+2. In **SQL Editor**, run the SQL below.
+3. In **Authentication → Users**, create your admin email and password.
+4. Copy `.env.example` to `.env` in the project root and fill in the Supabase
+   URL and anon key in both pairs of variables.
+5. Build and start the app:
+>>>>>>> agents/nocodb-setup-on-personal-server
 
 ```sh
 npm install
@@ -44,5 +59,51 @@ npm run build
 npm start
 ```
 
+<<<<<<< HEAD
 If NocoDB is unavailable or the variables are missing, the site deliberately
 shows the bundled sample projects instead of exposing an API error or secret.
+=======
+`npm start` loads the root `.env` file automatically. Restart after changing
+environment values.
+
+```sql
+create table public.projects (
+  id uuid primary key default gen_random_uuid(),
+  title text not null,
+  slug text not null unique,
+  summary text not null default '',
+  description text not null default '',
+  tech_stack text[] not null default '{}',
+  category text not null default 'web',
+  cover_image text,
+  live_url text,
+  repo_url text,
+  featured boolean not null default false,
+  published boolean not null default true,
+  display_order integer not null default 0,
+  year text,
+  created_at timestamptz not null default now()
+);
+
+alter table public.projects enable row level security;
+
+create policy "Anyone can read published projects"
+  on public.projects for select
+  using (published = true or auth.uid() is not null);
+
+create policy "Signed-in admins can insert projects"
+  on public.projects for insert to authenticated
+  with check (true);
+
+create policy "Signed-in admins can update projects"
+  on public.projects for update to authenticated
+  using (true) with check (true);
+
+create policy "Signed-in admins can delete projects"
+  on public.projects for delete to authenticated
+  using (true);
+```
+
+The admin page is intentionally at `/admin`, but the URL alone is not the
+security boundary: Supabase Auth and RLS protect the data.
+>>>>>>> agents/nocodb-setup-on-personal-server
