@@ -95,7 +95,6 @@ export const sampleProjects: Project[] = [
   },
 ];
 
-
 export function sortProjects(projects: Project[]) {
   return [...projects].sort((a, b) => a.order - b.order || a.title.localeCompare(b.title));
 }

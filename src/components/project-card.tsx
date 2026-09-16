@@ -24,9 +24,7 @@ export function ProjectCard({ project }: { project: Project }) {
       ) : null}
 
       <h3 className="mt-5 text-lg font-semibold tracking-tight">{project.title}</h3>
-      <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
-        {project.summary}
-      </p>
+      <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{project.summary}</p>
 
       {project.techStack.length > 0 ? (
         <ul className="mt-5 flex flex-wrap gap-2">
