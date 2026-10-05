@@ -11,6 +11,10 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "Philip Cadungog — Full Stack & n8n Automation Developer" },
       {
+        name: "google-site-verification",
+        content: "cZoSjE1HM3uTUgcRXh1hitpVXfocwM09SEVF6N36hfs",
+      },
+      {
         name: "description",
         content:
           "Software developer in Dumaguete building full stack web applications and n8n automations that remove manual work.",
