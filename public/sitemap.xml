@@ -1,80 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-       <loc>https://philipdev.onrender.com/</loc>
-       <lastmod>2026-10-05T10:58:50+00:00</lastmod>
-       <priority>1.0000</priority>
+    <loc>https://philipdev.onrender.com/</loc>
+    <lastmod>2026-10-05T10:58:50+00:00</lastmod>
   </url>
+
   <url>
-       <loc>https://philipdev.onrender.com/projects</loc>
-       <lastmod>2026-10-05T10:58:50+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://philipdev.onrender.com/projects</loc>
+    <lastmod>2026-10-05T10:58:50+00:00</lastmod>
   </url>
+
   <url>
-       <loc>https://philipdev.onrender.com/services</loc>
-       <lastmod>2026-10-05T10:58:50+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://philipdev.onrender.com/services</loc>
+    <lastmod>2026-10-05T10:58:50+00:00</lastmod>
   </url>
+
   <url>
-       <loc>https://philipdev.onrender.com/about</loc>
-       <lastmod>2026-10-05T10:58:50+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://philipdev.onrender.com/about</loc>
+    <lastmod>2026-10-05T10:58:50+00:00</lastmod>
   </url>
+
   <url>
-       <loc>https://philipdev.onrender.com/notes</loc>
-       <lastmod>2026-10-05T10:58:50+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://philipdev.onrender.com/notes</loc>
+    <lastmod>2026-10-05T10:58:50+00:00</lastmod>
   </url>
+
   <url>
-       <loc>https://philipdev.onrender.com/contact</loc>
-       <lastmod>2026-10-05T10:58:50+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://philipdev.onrender.com/contact</loc>
+    <lastmod>2026-10-05T10:58:50+00:00</lastmod>
   </url>
+
   <url>
-       <loc>https://philipdev.onrender.com/projects/youtube-long-form-automation</loc>
-       <lastmod>2026-10-05T10:58:50+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://philipdev.onrender.com/projects/youtube-long-form-automation</loc>
+    <lastmod>2026-10-05T10:58:50+00:00</lastmod>
   </url>
+
   <url>
-       <loc>https://philipdev.onrender.com/projects/citygame-com-wordpress-migration-translation-automation</loc>
-       <lastmod>2026-10-05T10:58:50+00:00</lastmod>
-       <priority>0.6400</priority>
+    <loc>https://philipdev.onrender.com/projects/citygame-com-wordpress-migration-translation-automation</loc>
+    <lastmod>2026-10-05T10:58:50+00:00</lastmod>
   </url>
+
   <url>
-       <loc>https://philipdev.onrender.com/projects/game-to-listing-pipeline</loc>
-       <lastmod>2026-10-05T10:58:50+00:00</lastmod>
-       <priority>0.6400</priority>
+    <loc>https://philipdev.onrender.com/projects/game-to-listing-pipeline</loc>
+    <lastmod>2026-10-05T10:58:50+00:00</lastmod>
   </url>
+
   <url>
-       <loc>https://philipdev.onrender.com/projects/jewish-courses</loc>
-       <lastmod>2026-10-05T10:58:50+00:00</lastmod>
-       <priority>0.6400</priority>
+    <loc>https://philipdev.onrender.com/projects/jewish-courses</loc>
+    <lastmod>2026-10-05T10:58:50+00:00</lastmod>
   </url>
+
   <url>
-       <loc>https://philipdev.onrender.com/projects/vetcare</loc>
-       <lastmod>2026-10-05T10:58:50+00:00</lastmod>
-       <priority>0.6400</priority>
+    <loc>https://philipdev.onrender.com/projects/vetcare</loc>
+    <lastmod>2026-10-05T10:58:50+00:00</lastmod>
   </url>
+
   <url>
-       <loc>https://philipdev.onrender.com/Philip_Cadungog_Resume.pdf</loc>
-       <lastmod>2026-09-16T08:42:10+00:00</lastmod>
-       <priority>0.6400</priority>
+    <loc>https://philipdev.onrender.com/notes/idempotent-n8n-workflows</loc>
+    <lastmod>2026-10-05T10:58:50+00:00</lastmod>
   </url>
+
   <url>
-       <loc>https://philipdev.onrender.com/notes/idempotent-n8n-workflows</loc>
-       <lastmod>2026-10-05T10:58:50+00:00</lastmod>
-       <priority>0.6400</priority>
+    <loc>https://philipdev.onrender.com/notes/webhooks-before-polling</loc>
+    <lastmod>2026-10-05T10:58:50+00:00</lastmod>
   </url>
+
   <url>
-       <loc>https://philipdev.onrender.com/notes/webhooks-before-polling</loc>
-       <lastmod>2026-10-05T10:58:50+00:00</lastmod>
-       <priority>0.6400</priority>
+    <loc>https://philipdev.onrender.com/notes/typed-boundaries-full-stack</loc>
+    <lastmod>2026-10-05T10:58:50+00:00</lastmod>
   </url>
-  <url>
-       <loc>https://philipdev.onrender.com/notes/typed-boundaries-full-stack</loc>
-       <lastmod>2026-10-05T10:58:50+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
+
 </urlset>
