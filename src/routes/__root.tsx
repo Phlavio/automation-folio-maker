@@ -51,6 +51,18 @@ function SiteFooter() {
           <p className="label-mono mt-1">{site.location}</p>
         </div>
         <div className="flex flex-wrap gap-4 font-mono text-xs uppercase tracking-[0.12em]">
+          <Link
+            to="/terms"
+            className="text-muted-foreground transition-colors hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+          >
+            Terms of Service
+          </Link>
+          <Link
+            to="/privacy"
+            className="text-muted-foreground transition-colors hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+          >
+            Privacy Policy
+          </Link>
           <a
             href={site.links.linkedin}
             target="_blank"

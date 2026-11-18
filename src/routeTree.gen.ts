@@ -13,7 +13,9 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as TermsRouteImport } from './routes/terms'
 import { Route as NotesIndexRouteImport } from './routes/notes.index'
 import { Route as NotesSlugRouteImport } from './routes/notes.$slug'
 import { Route as ProjectsIndexRouteImport } from './routes/projects.index'
@@ -39,9 +41,19 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ServicesRoute = ServicesRouteImport.update({
   id: '/services',
   path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NotesIndexRoute = NotesIndexRouteImport.update({
@@ -70,7 +82,9 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/admin': typeof AdminRoute
   '/contact': typeof ContactRoute
+  '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRoute
+  '/terms': typeof TermsRoute
   '/notes/$slug': typeof NotesSlugRoute
   '/projects/$slug': typeof ProjectsSlugRoute
   '/notes/': typeof NotesIndexRoute
@@ -81,7 +95,9 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/admin': typeof AdminRoute
   '/contact': typeof ContactRoute
+  '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRoute
+  '/terms': typeof TermsRoute
   '/notes/$slug': typeof NotesSlugRoute
   '/projects/$slug': typeof ProjectsSlugRoute
   '/notes': typeof NotesIndexRoute
@@ -93,7 +109,9 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/admin': typeof AdminRoute
   '/contact': typeof ContactRoute
+  '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRoute
+  '/terms': typeof TermsRoute
   '/notes/$slug': typeof NotesSlugRoute
   '/projects/$slug': typeof ProjectsSlugRoute
   '/notes/': typeof NotesIndexRoute
@@ -106,7 +124,9 @@ export interface FileRouteTypes {
     | '/about'
     | '/admin'
     | '/contact'
+    | '/privacy'
     | '/services'
+    | '/terms'
     | '/notes/$slug'
     | '/projects/$slug'
     | '/notes/'
@@ -117,7 +137,9 @@ export interface FileRouteTypes {
     | '/about'
     | '/admin'
     | '/contact'
+    | '/privacy'
     | '/services'
+    | '/terms'
     | '/notes/$slug'
     | '/projects/$slug'
     | '/notes'
@@ -128,7 +150,9 @@ export interface FileRouteTypes {
     | '/about'
     | '/admin'
     | '/contact'
+    | '/privacy'
     | '/services'
+    | '/terms'
     | '/notes/$slug'
     | '/projects/$slug'
     | '/notes/'
@@ -140,7 +164,9 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   AdminRoute: typeof AdminRoute
   ContactRoute: typeof ContactRoute
+  PrivacyRoute: typeof PrivacyRoute
   ServicesRoute: typeof ServicesRoute
+  TermsRoute: typeof TermsRoute
   NotesSlugRoute: typeof NotesSlugRoute
   ProjectsSlugRoute: typeof ProjectsSlugRoute
   NotesIndexRoute: typeof NotesIndexRoute
@@ -177,11 +203,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/services': {
       id: '/services'
       path: '/services'
       fullPath: '/services'
       preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/notes/': {
@@ -220,7 +260,9 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   AdminRoute: AdminRoute,
   ContactRoute: ContactRoute,
+  PrivacyRoute: PrivacyRoute,
   ServicesRoute: ServicesRoute,
+  TermsRoute: TermsRoute,
   NotesSlugRoute: NotesSlugRoute,
   ProjectsSlugRoute: ProjectsSlugRoute,
   NotesIndexRoute: NotesIndexRoute,
